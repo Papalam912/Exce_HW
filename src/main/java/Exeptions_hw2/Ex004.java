@@ -7,7 +7,7 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Ex004 {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Введите строку: ");
         String str = scanner.nextLine();
