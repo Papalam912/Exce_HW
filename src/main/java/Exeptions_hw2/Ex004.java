@@ -7,17 +7,17 @@ import java.util.Objects;
 import java.util.Scanner;
 
 public class Ex004 {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
-        while(true){
-            System.out.println("Введите строку: ");
-            String str = scanner.nextLine();
-            if (!Objects.equals(str, "")) {
-                System.out.println("внесена строка: " + str);
-                break;
-            } else {
-                System.err.println("Exception: пустые строки вводить нельзя!");
+        System.out.println("Введите строку: ");
+        String str = scanner.nextLine();
+        if (!Objects.equals(str, "")) {
+            System.out.println("внесена строка: " + str);
+        } else
+            try {
+                throw new Exception();
+            } catch (Exception e) {
+                System.err.println("пустые строки вводить нельзя!");
             }
-        }
     }
 }
