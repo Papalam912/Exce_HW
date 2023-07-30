@@ -14,9 +14,9 @@ public class Ex004 {
             String str = scanner.nextLine();
             if (!Objects.equals(str, "")) {
                 System.out.println("внесена строка: " + str);
+                break;
             } else {
                 System.err.println("Exception: пустые строки вводить нельзя!");
-                break;
             }
         }
     }
